@@ -1,5 +1,7 @@
 # 'Software engineers do what now?' Code examples
 
+![](./assets\front-cover.jpg)
+
 All the code examples used in the book 'Software Engineers do what now?'
 
 Raise a Pull Request if you'd like to suggest changes.

@@ -1,0 +1,29 @@
+.recipes {
+  list-style: none;
+  padding: 0;
+}
+
+.recipe {
+  padding: 1rem;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.recipe:hover {
+  background-color: #cccccc;
+}
+
+.rating {
+  background-color: #e2e2e2;
+  border-radius: 50%;
+  margin: 0;
+  padding: 1rem;
+  text-align: center;
+}
+
+.rating span {
+  font-size: 1.5rem;
+  font-weight: bold;
+}

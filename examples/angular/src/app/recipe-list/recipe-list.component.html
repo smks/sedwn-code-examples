@@ -1,0 +1,11 @@
+<h1>Recipes</h1>
+
+<ul class="recipes">
+  <li class="recipe" *ngFor="let recipe of recipes">
+    <h2>{{ recipe.name }}</h2>
+    <p class="rating">
+      <span>{{ recipe.starRating }}</span
+      >/10
+    </p>
+  </li>
+</ul>

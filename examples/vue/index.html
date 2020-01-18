@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>GymSharks</title>
+  </head>
+  <body>
+    <!-- Application -->
+    <div id="app">
+      <h1>List of our Personal Training Plans</h1>
+      <choose-a-plan></choose-a-plan>
+    </div>
+
+    <!-- List of Plans -->
+    <script type="text/x-template" id="choose-a-plan">
+      <ol class="plans">
+        <plan v-for="plan in plans" :name="plan"></plan>
+      </ol>
+    </script>
+
+    <!-- Plan Item -->
+    <script type="text/x-template" id="plan">
+      <li class="plan-item">
+        {{ name }}
+      </li>
+    </script>
+
+    <script src="https://unpkg.com/vue"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

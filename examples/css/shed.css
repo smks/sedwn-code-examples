@@ -1,0 +1,52 @@
+:root {
+  --outline-size: 30px;
+  --shed-color: #ffad61;
+  --door-color: #795548;
+  --outline-color: black;
+  --shed-height: 500px;
+  --shed-width: 600px;
+  --door-height: 400px;
+  --door-width: 300px;
+  --roof-angle: 100px;
+  --roof-height: 150px;
+}
+
+.shed {
+  background-color: var(--shed-color);
+  border: var(--outline-size) solid var(--outline-color);
+  height: var(--shed-height);
+  position: relative;
+  width: var(--shed-width);
+}
+
+.door,
+.roof {
+  position: absolute;
+}
+
+.door {
+  background-color: var(--door-color);
+  border: calc(var(--outline-size) / 1.5) solid var(--outline-color);
+  border-bottom: none;
+  bottom: 0;
+  box-sizing: border-box;
+  height: var(--door-height);
+  left: calc(50% - calc(var(--door-width) / 2));
+  width: var(--door-width);
+}
+
+.roof {
+  border-color: var(--outline-color) transparent;
+  border-style: solid;
+  border-width: 0 var(--roof-angle) var(--roof-height) var(--roof-angle);
+  left: calc(var(--roof-angle) * -1);
+  top: calc(var(--roof-height) * -1);
+  width: var(--shed-width);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}

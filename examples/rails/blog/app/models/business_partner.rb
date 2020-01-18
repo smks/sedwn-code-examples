@@ -1,0 +1,2 @@
+class BusinessPartner < ApplicationRecord
+end
